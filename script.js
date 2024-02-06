@@ -8,18 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', resizeRectangles);
 
   // Adjust sizes on scroll
-  window.addEventListener('wheel', handleScroll, {passive: false});
+  window.addEventListener('scroll', handleScroll); // Changed from 'wheel' to 'scroll'
 });
 
 function resizeRectangles() {
   const aspectRatio = window.innerWidth / window.innerHeight;
-  // Base size calculation
-  const baseWidth = window.innerWidth * 0.1; // 10% of window width
-  const baseHeight = baseWidth / aspectRatio; // Adjusted based on aspect ratio
+  const baseWidth = window.innerWidth * 0.1; 
+  const baseHeight = baseWidth / aspectRatio; 
 
   document.querySelectorAll('.rectangle').forEach((rect, index) => {
-    // Adjust size based on index and scale factor to maintain aspect ratio
-    const factor = 1 + index * 0.5; // Modify this as needed
+    const factor = 1 + index * 0.5;
     const width = baseWidth * factor * scaleFactor;
     const height = baseHeight * factor * scaleFactor;
     rect.style.width = `${width}px`;
@@ -27,13 +25,10 @@ function resizeRectangles() {
   });
 }
 
-function handleScroll(event) {
-  event.preventDefault(); // Prevent default scrolling
-
-  // Adjust the scale factor based on scroll direction
-  const direction = event.deltaY > 0 ? 1 : -1;
-  scaleFactor += direction * 0.005; // Control the sensitivity
-  scaleFactor = Math.max(0.1, scaleFactor); // Prevent too small
+function handleScroll() {
+  // Calculate new scale factor based on scroll position
+  // This is a simple example; you may need a more complex calculation
+  scaleFactor = 1 + window.scrollY / 50;
 
   resizeRectangles(); // Recalculate sizes with the new scale factor
 }

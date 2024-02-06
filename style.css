@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Prevent actual scrolling */
+
   }
   
   #container {
@@ -12,6 +12,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   
   .rectangle {
     position: fixed;
@@ -33,4 +34,16 @@ body, html {
   #rectangle9 { width: 500px; height: 500px; z-index: 2; background-color: rgb(37, 37, 37);}
   #rectangle10 { width: 550px; height: 550px; z-index: 1; background-color: #000000;}
   
-  
+  h1, h2, p {
+    position: relative; 
+    text-align: center;
+    align-items: center;
+    z-index: 11;
+  }
+  video{
+    position: relative; 
+    text-align: center;
+    align-items: center;
+    padding-left: 18vh;
+    z-index: 11;
+  }
