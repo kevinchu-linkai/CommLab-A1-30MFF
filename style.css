@@ -1,7 +1,8 @@
 body, html {
+    font-family: 'Space Grotesk', sans-serif;
     height: 100%;
     margin: 0;
-
+    background-color: #393939;
   }
   
   #container {
@@ -74,12 +75,30 @@ body, html {
   #rectangle9 { width: 500px; height: 500px; z-index: 2; background-color: rgb(37, 37, 37);}
   #rectangle10 { width: 550px; height: 550px; z-index: 1; background-color: #000000;}
   
-  h1, h2, p {
+  h1 {
     position: relative; 
     text-align: center;
     align-items: center;
     z-index: 11;
+    color: pink;
   }
+
+  h2 {
+    position: relative; 
+    text-align: center;
+    align-items: center;
+    z-index: 11;
+    color: rgb(240, 155, 169);
+  }
+
+  p {
+    position: relative; 
+    text-align: center;
+    align-items: center;
+    z-index: 11;
+    color: rgb(214, 141, 154);
+  }
+
   video{
     position: relative; 
     text-align: center;
