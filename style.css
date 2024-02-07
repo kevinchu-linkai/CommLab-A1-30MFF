@@ -13,11 +13,42 @@ body, html {
     transform: translate(-50%, -50%);
   }
 
-  #page2 {
+ #page1{
+    padding-bottom: 0;
     width: 100vw; /* Larger than the viewport to simulate scrolling */
     height: 100vh;
     position: relative;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+  #page2 {
+    width: 100vw; /* Larger than the viewport to simulate scrolling */
+    height: 100vh;
+    padding-top: 100vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #page3 {
+    width: 100vw; /* Larger than the viewport to simulate scrolling */
+    height: 100vh;
+    padding-top: 100vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #page4 {
+    width: 100vw; /* Larger than the viewport to simulate scrolling */
+    height: 60vh;
+    padding-top: 40vh;
+    position: relative;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -32,11 +63,11 @@ body, html {
   }
   
   /* Rectangle sizes */
-  /* #rectangle1 { width: 100px; height: 100px; z-index: 10; background-color: #ffffff;}
+  #rectangle1 { width: 100px; height: 100px; z-index: 10; background-color: #ffffff;}
   #rectangle2 { width: 150px; height: 150px; z-index: 9; background-color: rgb(221, 221, 221);}
   #rectangle3 { width: 200px; height: 200px; z-index: 8; background-color: #bebebe;}
   #rectangle4 { width: 250px; height: 250px; z-index: 7; background-color: rgb(165, 165, 165);}
-  #rectangle5 { width: 300px; height: 300px; z-index: 6; background-color: #7e7e7e;} */
+  #rectangle5 { width: 300px; height: 300px; z-index: 6; background-color: #7e7e7e;}
   #rectangle6 { width: 350px; height: 350px; z-index: 5; background-color: #696969;}
   #rectangle7 { width: 400px; height: 400px; z-index: 4; background-color: rgb(82, 82, 82);}
   #rectangle8 { width: 450px; height: 450px; z-index: 3; background-color: #393939;}
