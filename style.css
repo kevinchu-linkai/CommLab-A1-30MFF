@@ -149,6 +149,7 @@ body, html {
     position: relative; 
     text-align: center;
     align-items: center;
+    top: -230px;
     z-index: 11;
     color: pink;
   }
@@ -157,6 +158,7 @@ body, html {
     position: relative; 
     text-align: center;
     align-items: center;
+    top: -220px;
     z-index: 11;
     color: rgb(214, 141, 154);
   }
@@ -182,6 +184,7 @@ body, html {
     text-align: center;
     align-items: center;
     z-index: 11;
+    font-size: large;
     color: pink;
   }
 
@@ -190,6 +193,7 @@ body, html {
     text-align: center;
     align-items: center;
     z-index: 11;
+    font-size: xx-large;
     color: pink;
   }
 
@@ -198,6 +202,7 @@ body, html {
     text-align: center;
     align-items: center;
     z-index: 11;
+    font-size: large;
     color: rgb(214, 141, 154);
   }
 
@@ -208,5 +213,15 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 11;
+  }
+
+  img{
+    position: relative; 
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -170%);
     z-index: 11;
   }
