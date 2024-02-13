@@ -11,6 +11,7 @@
 </head>
 <body>
 
+<!-- creating a container for interactive rectangles -->
 <div id="container">
     <div class="rectangle" id="rectangle1"></div>
     <div class="rectangle" id="rectangle2"></div>
@@ -24,19 +25,23 @@
     <div class="rectangle" id="rectangle10"></div>
   </div>
 
+<!-- dummy anchor for returning to the home page -->
 <div style="position: relative;">
     <div id="home" style="position: absolute; top: -80vh;"></div>
 </div>
 
+<!-- content of page1: title and subtitle -->
 <div id="page1">
     <h1 id="title">Through Rectangular Vsion</h1>
     <p id="subtitle">Unique Spaces: A Fusion of Structure and Imagination</p>
 </div>
 
+<!-- dummy anchor for returning to the subtitle page -->
 <div style="position: relative;">
     <div id="subTitle" style="position: absolute; top: -67vh;"></div>
 </div>
 
+<!-- content of page2: profile -->
 <div id="page2" class="profile">
     <h1>Profile</h1>
     <img src="./Media/Photo.jpg" width=30% height=auto>
@@ -44,16 +49,19 @@
     <p>Computer Science major,  Interactive Media minor,  Junior @NYUAD</p>
 </div>
 
+<!-- dummy anchor for returning to the profile page -->
 <div style="position: relative;">
     <div id="profile" style="position: absolute; top: -75vh;"></div>
 </div>
 
+<!-- content of page3: video -->
 <div id="page3" class="fullscreen-video">
     <video id="video" width=100% height=auto controls>
         <source src="Media/Retangular Vision.mp4" type="video/mp4">
     </video>
 </div>
 
+<!-- content of page4: contact -->
 <div id="page4">
     <h2>Contact Information</h2>
     <a id="iglink" href="https://www.instagram.com/k.mexiporc.c/" target="_blank">Instagram: @k.mexiporc.c</a>
@@ -62,6 +70,7 @@
     <p>Phone: +971 50 138 4118</p>
 </div>
 
+<!-- a menu bar to navigate through the web page using anchors -->
 <div class="menu-bar" id="menuBar">
     <a href="#home">Home</a>
     <a href="#subTitle">Begin</a>
@@ -70,7 +79,7 @@
     <a href="#page4">Contact</a>
 </div>
 
-
+<!-- including the js file for interaction -->
 <script src="script.js"></script>
 </body>
 </html>
