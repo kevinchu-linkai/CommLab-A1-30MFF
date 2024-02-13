@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', resizeRectangles);
 
   // Adjust sizes on scroll
-  window.addEventListener('scroll', handleScroll); // Changed from 'wheel' to 'scroll'
+  window.addEventListener('scroll', handleScroll); 
 });
 
 function resizeRectangles() {
@@ -27,8 +27,6 @@ function resizeRectangles() {
 
 function handleScroll() {
   // Calculate new scale factor based on scroll position
-  // This is a simple example; you may need a more complex calculation
   scaleFactor = 1 + window.scrollY / 200;
-
   resizeRectangles(); // Recalculate sizes with the new scale factor
 }
